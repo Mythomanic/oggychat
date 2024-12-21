@@ -15,20 +15,21 @@
     "@types/react": "~18.3.12",
     "axios": "^1.7.7",
     "aztro-js": "^0.1.5",
-    "expo": "~52.0.11",
+    "expo": "~52.0.20",
+    "expo-av": "~15.0.1",
     "expo-blur": "~14.0.1",
     "expo-constants": "~17.0.3",
     "expo-image-picker": "~16.0.3",
     "expo-linear-gradient": "~14.0.1",
     "expo-linking": "~7.0.3",
-    "expo-router": "~4.0.9",
+    "expo-router": "~4.0.14",
     "expo-secure-store": "~14.0.0",
-    "expo-splash-screen": "~0.29.13",
+    "expo-splash-screen": "~0.29.18",
     "expo-status-bar": "~2.0.0",
     "moment": "^2.30.1",
     "native-base": "patch:native-base@npm%3A3.4.28#~/.yarn/patches/native-base-npm-3.4.28-a8ecceae4d.patch",
     "react": "18.3.1",
-    "react-native": "0.76.3",
+    "react-native": "0.76.5",
     "react-native-calendars": "^1.1307.0",
     "react-native-flash-message": "^0.4.2",
     "react-native-gesture-handler": "~2.20.2",
@@ -44,5 +45,5 @@
     "react-native-dotenv": "^3.4.11"
   },
   "private": true,
-  "packageManager": "yarn@4.4.1"
+  "packageManager": "yarn@4.5.3"
 }

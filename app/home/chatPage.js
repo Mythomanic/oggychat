@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { View, FlatList, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, ImageBackground } from 'react-native';
+import { View, FlatList, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, ImageBackground, Image, Text } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, FontAwesome } from '@expo/vector-icons';
 import ChatBubble from '../components/ChatBubble';
 import styles, { primaryColor } from '../../App.styles';
 
@@ -50,11 +50,39 @@ export default function ChatPage() {
                     style={[styles.loginPageGradient, { height: "100%" }]}
                 >
 
+                    <View style={styles.chatHeader}>
+                        <TouchableOpacity
+                            style={styles.backButton}
+                            onPress={() => navigation.goBack()}
+                        >
+                            <FontAwesome name="arrow-left" size={24} color={primaryColor} />
+                        </TouchableOpacity>
+
+                        <View style={styles.chatUserInfo}>
+                            <Image
+                                source={{ uri: "https://i.pravatar.cc/200" }}
+                                style={styles.chatUserAvatar}
+                            />
+                            <View style={styles.chatUserTextContainer}>
+                                <Text style={styles.chatUserName}>Ahmet Yılmaz</Text>
+                                <Text style={styles.chatUserStatus}>Online</Text>
+                            </View>
+                        </View>
+
+                        <TouchableOpacity
+                            style={styles.moreButton}
+                            onPress={() => {/* Handle more options */ }}
+                        >
+                            <FontAwesome name="ellipsis-v" size={24} color={primaryColor} />
+                        </TouchableOpacity>
+                    </View>
+
+
                     <FlatList
                         data={messages}
                         keyExtractor={(item) => item.id}
                         renderItem={({ item }) => <ChatBubble message={item} isUser={item.isUser} />}
-                        contentContainerStyle={{ paddingTop: 60, paddingBottom: 20 }}
+                        contentContainerStyle={{ paddingTop: 85, paddingBottom: 20 }}
                     />
 
                     <View style={[styles.inputContainer, { backgroundColor: 'rgba(255, 255, 255, 0.1)' }]}>
@@ -86,6 +114,7 @@ import { Ionicons } from '@expo/vector-icons';
 import ChatBubble from '../components/ChatBubble';
 import styles, { primaryColor } from '../../App.styles';
 import io from 'socket.io-client'; // Import Socket.IO client
+import { FontAwesome } from '@expo/vector-icons';
 
 // Update to your local server URL or IP
 const SOCKET_SERVER_URL = "http://localhost:3001";

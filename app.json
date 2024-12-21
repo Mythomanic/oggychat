@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "OggyChat",
+    "name": "Chat App",
     "slug": "oggychat",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,15 +11,15 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1e3b4d"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#1e3b4d"
       }
     },
     "web": {

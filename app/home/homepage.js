@@ -9,71 +9,71 @@ import Toolbar from '../components/Toolbar';
 const mockChats = [
     {
         id: '1',
-        name: 'John Doe',
-        lastMessage: 'Hey, how are you?',
+        name: 'Ahmet Yılmaz',
+        lastMessage: 'Merhaba, nasılsın?',
         time: '10:30 AM',
         avatar: 'https://i.pravatar.cc/150/10',
     },
     {
         id: '2',
-        name: 'Jane Smith',
-        lastMessage: 'The meeting is at 2 PM',
+        name: 'Ayşe Demir',
+        lastMessage: 'Toplantı saat 14:00\'te',
         time: '9:45 AM',
         avatar: 'https://i.pravatar.cc/150/11',
     },
     {
         id: '3',
-        name: 'Alice Johnson',
-        lastMessage: 'Are you coming to the party?',
+        name: 'Zeynep Kaya',
+        lastMessage: 'Partiye gelecek misin?',
         time: '8:00 PM',
         avatar: 'https://i.pravatar.cc/150/12',
     },
     {
         id: '4',
-        name: 'Bob Brown',
-        lastMessage: 'Let\'s meet for lunch',
+        name: 'Mehmet Öz',
+        lastMessage: 'Öğle yemeğinde buluşalım',
         time: '12:00 PM',
         avatar: 'https://i.pravatar.cc/150/13',
     },
     {
         id: '5',
-        name: 'Charlie Davis',
-        lastMessage: 'How was your day?',
+        name: 'Elif Şahin',
+        lastMessage: 'Günün nasıl geçti?',
         time: '6:00 PM',
         avatar: 'https://i.pravatar.cc/150/14',
     },
     {
         id: '6',
-        name: 'David Wilson',
-        lastMessage: 'I need your help',
+        name: 'Mustafa Çelik',
+        lastMessage: 'Yardımına ihtiyacım var',
         time: '3:00 PM',
         avatar: 'https://i.pravatar.cc/150/15',
     },
     {
         id: '7',
-        name: 'Eve Garcia',
-        lastMessage: 'I miss you',
+        name: 'Esra Aydın',
+        lastMessage: 'Projeyi tamamladın mı?',
         time: '7:00 PM',
         avatar: 'https://i.pravatar.cc/150/16',
     },
     {
         id: '8',
-        name: 'Frank Martinez',
-        lastMessage: 'Let\'s go for a walk',
+        name: 'Burak Yıldız',
+        lastMessage: 'Yürüyüşe çıkalım mı?',
         time: '5:00 PM',
         avatar: 'https://i.pravatar.cc/150/17',
     },
     {
         id: '9',
-        name: 'Grace Robinson',
-        lastMessage: 'I have a surprise for you',
+        name: 'Selin Arslan',
+        lastMessage: 'Sana bir sürprizim var',
         time: '4:00 PM',
         avatar: 'https://i.pravatar.cc/150/18',
     },
     {
         id: '10',
-        name: 'Henry Young',
-        lastMessage: 'I need to talk to you',
+        name: 'Can Özdemir',
+        lastMessage: 'Seninle konuşmam lazım',
         time: '2:00 PM',
         avatar: 'https://i.pravatar.cc/150/19',
     },
@@ -95,7 +95,7 @@ export default function HomePage() {
                     <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ flexGrow: 1, }} style={{}}>
 
                         <View style={{ padding: 15, marginTop: 10 }}>
-                            <Text style={styles.HomePageTitle}>Messages</Text>
+                            <Text style={styles.HomePageTitle}>Mesajlar</Text>
                         </View>
                         <FlatList
                             data={mockChats}

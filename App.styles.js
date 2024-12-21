@@ -343,7 +343,8 @@ const styles = StyleSheet.create({
     toolbarItem: {
         flex: 1,
         alignItems: 'center', justifyContent: 'center', borderRadius: 10,
-        padding: 10
+        padding: 10,
+        gap: 5
     },
 
     toolbarItemText: {
@@ -462,6 +463,216 @@ const styles = StyleSheet.create({
         color: '#FFFFFF',
         fontSize: 16,
         fontFamily: 'Font2',
+    },
+
+    discoverContainer: {
+        flex: 1,
+        padding: 20,
+        paddingTop: 40,
+    },
+    discoverTitle: {
+        fontSize: 32,
+        color: primaryColor,
+        fontFamily: 'Font3',
+        marginBottom: 20,
+        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+        textShadowOffset: { width: -1, height: 1 },
+        textShadowRadius: 10,
+    },
+    searchContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+        borderRadius: 15,
+        paddingHorizontal: 15,
+        marginBottom: 20,
+    },
+    searchIcon: {
+        marginRight: 10,
+    },
+    searchInput: {
+        flex: 1,
+        height: 50,
+        color: '#FFFFFF',
+        fontFamily: 'Font1',
+        fontSize: 16,
+    },
+    userList: {
+        paddingBottom: 100,
+    },
+    discoverUserCard: {
+        flexDirection: 'row',
+        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+        borderRadius: 15,
+        padding: 15,
+        marginBottom: 15,
+        alignItems: 'center',
+    },
+    discoverUserAvatar: {
+        width: 70,
+        height: 70,
+        borderRadius: 35,
+        borderWidth: 2,
+        borderColor: mainBlue,
+    },
+    discoverUserInfo: {
+        flex: 1,
+        marginLeft: 15,
+    },
+    discoverUserName: {
+        fontSize: 18,
+        color: '#FFFFFF',
+        fontFamily: 'Font2',
+    },
+    discoverUserUsername: {
+        fontSize: 14,
+        color: primaryColor,
+        fontFamily: 'Font1',
+        marginTop: 2,
+    },
+    discoverUserBio: {
+        fontSize: 14,
+        color: 'rgba(255, 255, 255, 0.7)',
+        fontFamily: 'Font1',
+        marginTop: 5,
+    },
+
+    userProfileContainer: {
+        flex: 1,
+        padding: 20,
+    },
+
+    userProfileInfo: {
+        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+        borderRadius: 15,
+        padding: 20,
+        marginTop: 20,
+    },
+
+    userProfileBackButton: {
+        position: 'absolute',
+        top: 40,
+        left: 5,
+        zIndex: 1,
+    },
+    userProfileHeader: {
+        alignItems: 'center',
+        marginTop: 80,
+    },
+    userProfileImage: {
+        width: 140,
+        height: 140,
+        borderRadius: 70,
+        borderWidth: 4,
+        borderColor: primaryColor,
+    },
+    userProfileName: {
+        fontSize: 28,
+        color: '#FFFFFF',
+        fontFamily: 'Font3',
+        marginTop: 15,
+    },
+    userProfileUsername: {
+        fontSize: 18,
+        color: primaryColor,
+        fontFamily: 'Font1',
+        marginTop: 5,
+    },
+    userProfileBio: {
+        fontSize: 16,
+        color: secondaryColor,
+        textAlign: 'center',
+        marginTop: 10,
+        fontFamily: 'Font1',
+        paddingHorizontal: 20,
+    },
+    followButton: {
+        backgroundColor: primaryColor,
+        paddingHorizontal: 40,
+        paddingVertical: 12,
+        borderRadius: 25,
+        marginTop: 20,
+        minHeight: 55,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    followingButton: {
+        backgroundColor: 'transparent',
+        borderWidth: 2,
+        borderColor: primaryColor,
+    },
+    followButtonText: {
+        color: '#FFFFFF',
+        fontSize: 16,
+        fontFamily: 'Font2',
+    },
+    followingButtonText: {
+        color: primaryColor,
+    },
+    statsContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        width: '100%',
+        marginTop: 25,
+        paddingHorizontal: 20,
+    },
+    statItem: {
+        alignItems: 'center',
+    },
+    statNumber: {
+        fontSize: 20,
+        color: '#FFFFFF',
+        fontFamily: 'Font3',
+    },
+    statLabel: {
+        fontSize: 14,
+        color: secondaryColor,
+        fontFamily: 'Font1',
+        marginTop: 5,
+    },
+
+    chatHeader: {
+        width: "100%",
+        backgroundColor: '#1c273b',
+        flexDirection: "row",
+        alignItems: 'center',
+        padding: 15,
+        position: 'absolute',
+        top: 0,
+        zIndex: 1,
+        borderBottomWidth: 1,
+        borderBottomColor: '#1c273b',
+    },
+    chatUserInfo: {
+        flex: 1,
+        flexDirection: "row",
+        alignItems: 'center',
+        gap: 10,
+    },
+    chatUserAvatar: {
+        width: 45,
+        height: 45,
+        borderRadius: 23,
+        borderWidth: 2,
+        borderColor: primaryColor,
+        marginLeft: 12,
+    },
+    chatUserName: {
+        fontSize: 18,
+        fontFamily: "Font2",
+        color: '#FFFFFF',
+    },
+    chatUserStatus: {
+        fontSize: 14,
+        fontFamily: "Font1",
+        color: primaryColor,
+        marginTop: 2,
+    },
+    backButton: {
+        padding: 8,
+    },
+    moreButton: {
+        padding: 8,
     },
 
 });
